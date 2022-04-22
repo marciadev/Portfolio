@@ -89,7 +89,7 @@ const Skills = ({title, dark, id}) => {
                     <Grid container className={classes.grid}>
                         {
                             skills.map(({ title, picture, link }, index)=>(
-                                <Grid item key={index} xs={8} sm={6} md={2}>
+                                <Grid item key={index} xs={6} sm={4} md={2}>
                                 <Card className={classes.card}>
                                     <CardContent>
                                         <Link href={link} target="_blank" rel="noopener noreferrer">
@@ -109,7 +109,7 @@ const Skills = ({title, dark, id}) => {
 
 const useStyles = makeStyles((theme)=> ({
     section: {
-        minHeight: "100vh",
+        minHeight: "90vh",
         backgroundColor: "#9ce9de"
     },
     sectiondark: {
@@ -120,15 +120,15 @@ const useStyles = makeStyles((theme)=> ({
         maxWidth: "80vw",
         margin: "0 auto",
         padding: theme.spacing(5),
-        display: "table",
     },
     grid: {
         marginTop: theme.spacing(6),
+        justifyContent: "space-between",
     },
     card: {
         maxWidth: 200,
         minHeight: 150,
-        margin: theme.spacing(3),
+        margin: theme.spacing(2),
         "&:hover" : {
             transform: "scale(1.1)",
             transition: ".5s",
@@ -143,7 +143,7 @@ const useStyles = makeStyles((theme)=> ({
     media: {
         width: "auto",
         height: "auto",
-        padding: '3rem',
+        padding: '40%',
     },
     title: {
         color: "#006d46",

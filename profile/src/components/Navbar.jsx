@@ -153,8 +153,8 @@ const useStyles = makeStyles((theme)=> ({
             width: "60vw",
         },
         "& h5": {
-            margin: theme.spacing(10, 0, 0, 4),
-            fontSize: "1.4rem",
+            margin: theme.spacing(8, 2, 2, 2),
+            fontSize: "1.2rem",
             color: "#006d46",
             fontWeight: "bold"
         },

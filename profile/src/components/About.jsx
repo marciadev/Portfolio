@@ -96,15 +96,15 @@ const useStyles = makeStyles((theme) => ({
   sectioncontent: {
     maxWidth: "80vw",
     margin: "0 auto",
-    padding: theme.spacing(5),
+    padding: theme.spacing(3),
   },
   card: {
     height: "70vh",
     display: "flex",
     marginTop: theme.spacing(6),
     position: "relative",
-    [theme.breakpoints.down("xs")]: {
-      height: "80vw"
+    [theme.breakpoints.down("sm")]: {
+      height: "75vh"
     },
   },
   media: {
@@ -113,6 +113,9 @@ const useStyles = makeStyles((theme) => ({
     objectFit: "cover",
     borderRadius: "10px",
     margin: theme.spacing(5),
+    [theme.breakpoints.down("sm")]: {
+      position: "relative"
+    },
   },
   cardcontent: {
     marginTop: theme.spacing(2),
@@ -128,13 +131,13 @@ const useStyles = makeStyles((theme) => ({
     bottom: "1rem",
     right: "3rem",
     [theme.breakpoints.down("sm")]: {
-      bottom: "0.1rem",
-      right: "0.1rem",
+      left: "4rem",
+      position: "absolute"
     },
     backgroundColor: "#00774f",
     padding: theme.spacing(3),
     "&:hover": {
-      backgroundColor: "#fff",
+      backgroundColor: "#9ce9de",
     },
     "& a": {
       color: "#fff",

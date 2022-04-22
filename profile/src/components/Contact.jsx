@@ -4,6 +4,7 @@ import gmail from '../assets/Gmail.png'
 import git from '../assets/GitHub.png'
 import outlook from '../assets/Outlook.png'
 import linkedin from '../assets/LinkedIn.png'
+import whatsapp from '../assets/Whatsapp.png'
 
 const Contact = ({title, dark, id}) => {
 
@@ -30,6 +31,11 @@ const Contact = ({title, dark, id}) => {
             picture: outlook,
             link: "mailto:maar94_th@hotmail.com"
         },
+        {
+            title: "whatsapp",
+            picture: whatsapp,
+            link:  "https://api.whatsapp.com/send?phone=+59891363358&text=Hi!"
+        }
 
     ]
 
